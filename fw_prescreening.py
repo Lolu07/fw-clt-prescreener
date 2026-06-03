@@ -917,7 +917,7 @@ def radar_chart(row):
         ),
         showlegend=False,
         margin=dict(l=16, r=16, t=12, b=12),
-        height=185, paper_bgcolor="rgba(0,0,0,0)",
+        height=185, paper_bgcolor="#ffffff",
     )
     return fig
 
@@ -2258,7 +2258,7 @@ with tab_eda:
         height=420, title="Key Indicator Correlations",
         margin=dict(l=90, r=20, t=50, b=90),
         xaxis=dict(tickfont=dict(size=9)), yaxis=dict(tickfont=dict(size=9)),
-        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="#ffffff", plot_bgcolor="#ffffff",
     )
     st.plotly_chart(fig, use_container_width=True, config={"displayModeBar":False})
 
