@@ -1,0 +1,12 @@
+name: Keep App Alive
+
+on:
+  schedule:
+    - cron: '*/25 * * * *'  # every 25 minutes
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit app
+        run: curl -s https://fw-clt-prescreener-platform.streamlit.app/ > /dev/null
